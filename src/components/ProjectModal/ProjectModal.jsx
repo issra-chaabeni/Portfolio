@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FiX, FiGithub } from 'react-icons/fi'; // Install react-icons jika belum: npm install react-icons
+import { FiX, FiGithub } from 'react-icons/fi'; // Install react-icons if it is not installed: npm install react-icons
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   // State to control the closing animation

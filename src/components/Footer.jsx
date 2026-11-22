@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div className="mt-32 pb-8 flex flex-col items-center relative z-10">
-      {/* Flex container adaptif */}
+      {/* Responsive flex container */}
       <div className="w-full flex flex-col md:flex-row items-center md:justify-between gap-6">
         
         {/* Title - at the very top on mobile */}

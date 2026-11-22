@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 
 const Navbar = ({ hidden = false }) => {
-  // ⛔ Saat hidden, jangan render apa pun
+  // ⛔ When hidden, render nothing
   if (hidden) return null;
 
   const [active, setActive] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setActive(window.scrollY > 150);
-    handleScroll(); // init posisi saat mount
+    handleScroll(); // initialize the position on mount
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);

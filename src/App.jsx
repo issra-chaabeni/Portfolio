@@ -22,7 +22,7 @@ function App() {
   const aboutRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  const [selectedProject, setSelectedProject] = useState(null); // null = modal tertutup
+  const [selectedProject, setSelectedProject] = useState(null); // null = modal is closed
 
   const handleProjectClick = (project) => {
     setSelectedProject(project);
@@ -111,11 +111,11 @@ function App() {
             />
           </div>
         </div>
-        {/* tentang */}
+        {/* about */}
         <div className="mt-15 mx-auto w-full max-w-[1600px] rounded-3xl border-[5px] border-violet-500/40 shadow-[0_0_30px_rgba(168,85,247,0.4)] bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] p-6" id="about">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10 pt-0 px-8" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <div className="basis-full md:basis-7/12 pr-0 md:pr-8 border-b md:border-b-0 md:border-r border-violet-500/30">
-              {/* Kolom kiri */}
+              {/* Left column */}
               <div className="flex-1 text-left">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
                   About Me
@@ -160,7 +160,7 @@ function App() {
               </div>
             </div>
 
-            {/* Kolom kanan */}
+            {/* Right column */}
             <div className="basis-full md:basis-5/12 pl-0 md:pl-8 overflow-hidden max-w-full flex justify-center ">
               <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
             </div>
@@ -197,9 +197,9 @@ function App() {
             ))}
           </div>
         </div>
-        {/* tentang */}
+        {/* about */}
 
-        {/* Proyek */}
+        {/* Projects */}
         <div className="proyek mt-32 py-10" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
         <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
@@ -216,10 +216,10 @@ function App() {
             />
           </div>
         </div>
-        {/* Proyek */}
+        {/* Projects */}
 
 
-        {/* Kontak */}
+        {/* Contact */}
         <div className="kontak mt-32 sm:p-10 p-0" id="contact">
           <h1
             className="text-4xl mb-2 font-bold text-center"
@@ -239,11 +239,11 @@ function App() {
             Get in touch with me or chat in real-time
           </p>
 
-          {/* Container dua kolom */}
+          {/* Two-column container */}
           <div className="flex flex-col md:flex-row gap-8">
           
 
-            {/* Contact Form di kanan */}
+            {/* Contact Form on the right */}
             <div className="flex-1">
               <form
                 action="https://formsubmit.co/issrachaabeni06@gmail.com"
@@ -301,7 +301,7 @@ function App() {
             </div>
           </div>
         </div>
-        {/* Kontak */}
+        {/* Contact */}
       </main>
 
       <ProjectModal

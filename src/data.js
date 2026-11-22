@@ -22,6 +22,7 @@ const Tools14 = assetUrl("tools/html.png");
 const Tools15 = assetUrl("tools/css.png");
 const Tools18 = assetUrl("tools/vite.png");
 const Tools19 = assetUrl("tools/mysql.png");
+const Tools20 = assetUrl("tools/postgre.png");
 
 
 export const listTools = [
@@ -132,6 +133,13 @@ export const listTools = [
     name: "MySql",
     is: "Framework",
     dad: "1900",
+  },
+  {
+    id: 20,
+    image: Tools20,
+    name: "PostgreSQL",
+    is: "Database",
+    dad: "2000",
   },
 ];
 
